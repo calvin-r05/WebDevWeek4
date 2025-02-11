@@ -1,14 +1,19 @@
 
-  <h1>Movie Favourites</h1>
-  <ul>
-    <li *ngFor="let movie of movies">{{movie.title}} ({{movie.year}}) - Directed by {{movie.director}}
-
-    </li>
-  </ul>
   <h1>
     Name: Calvin Regan
     Student Number: s00250043
   </h1>
+
+  <div class="container">
+    <h1>Movie Favourites</h1>
+    <app-add-movie></app-add-movie>
+    <app-list-movies></app-list-movies>
+  </div>
+  <!--<h2>
+  <input #phone placeholder="phone number"/>
+  <button type= "button"
+  (click)="callPhone(phone.value)">Call</button>
+  <h2>-->
 
 
 
